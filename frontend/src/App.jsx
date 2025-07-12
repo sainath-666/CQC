@@ -9,12 +9,14 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Visualization />} />
-        <Route path="/result" element={<Result />} />
-        <Route path="/advanced-tools" element={<AdvancedTools />} />
-        <Route path="/benchmarking" element={<Benchmarking />} />
-      </Routes>
+      <div className="pl-64">
+        <Routes>
+          <Route path="/" element={<Visualization />} />
+          <Route path="/result" element={<Result />} />
+          <Route path="/advanced-tools" element={<AdvancedTools />} />
+          <Route path="/benchmarking" element={<Benchmarking />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
